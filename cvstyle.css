@@ -54,6 +54,13 @@ a.btn { font-size: 1em; text-decoration: none; color: #fff; border: 1px solid #f
 
 a.btn:hover { background-color: rgba(0, 0, 0, .3); } 
 
+/* Images - Responsive */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+ 
 /*Header*/
 
 header {height: 330px; background: #2cbdb5 url(images/TFsample.jpg) center bottom; position: relative; }
@@ -91,7 +98,17 @@ section.narrative {background-color: #2cbdb5; padding-top: 30px; padding-bottom:
 
 /* Section - RBAC Photo */
 
-section.photo { background: no-repeat center top; background-size: 75px 75px; padding-top: 90px; margin-left: 30px; }
+section.photo { 
+    background: no-repeat center top; 
+    background-size: 75px 75px; 
+    padding-top: 90px; 
+    margin-left: 30px; 
+}
+
+section.photo img {
+    max-width: 100%;
+    height: auto;
+}
 
 /* Section - Executive Bio */
 
@@ -171,8 +188,6 @@ header {height: 330px; background: #2cbdb5 url(images/TFsample.jpg) center botto
 header div.hero { position: absolute; width: 56%; top: 150%; left: 35%;  }
 header div.hero h1 { line-height: 1em; width:55%; margin:-380px 30px 50px 250px; color: #fff;} 
 
-}
-
 @media screen and (max-width: 825px) {
 
     h1 { font-size: 2.2em; }
@@ -184,19 +199,20 @@ header div.hero h1 { line-height: 1em; width:55%; margin:-380px 30px 50px 250px;
     header div.hero h1 { line-height: 1em; width:55%; margin:-380px 30px 50px 250px; color: #fff;} 
     header img { height: 300px; }
 
-    /*Section - Atmosphere or details */
+    /*Section - NAV */
 
-    section.details content { padding-left: 325px; background-size: 300px auto; }
+    nav ul {position: static; width: auto; padding: 0px 50px;}
 
-
-    /*Section - How-to or Certs */
-
-    section.certs aside div.content.certs { margin-top: 20px; margin-bottom: 10px; float: right; padding-left: 325px; background-size: 300px auto; }
-    section.certs aside div.content.certs img { height: 100px; padding-left: 325px; background-size: 300px auto; }
-    section.certs aside h5 { margin-top: 20px; margin-bottom: 30px; float: right; padding-left: 325px; background-size: 300px auto; }
-
-    section.certs blockquote h5.disclaimer { font-size: 1.1em; line-height: 1.2em; }
-    section.certs blockquote h5.disclaimer { font-size: .85em; }
+    /*Section - RBAC Photo*/
+    section.photo {
+        background-size: 55px 55px;
+        padding-top: 0px;
+        margin-left: 10px;
+    }
+    
+    section.photo img {
+        max-width: 100%;
+    }
 
 }
 
@@ -210,17 +226,25 @@ header div.hero h1 { line-height: 1em; width:55%; margin:-380px 30px 50px 250px;
 
       header div.hero { position: absolute; width: 56%; top: 150%; left: 25%;  }
     
-    /*Section - Main (professional summary and core strengths)*/
+/*Section - RBAC Photo*/
+    section.photo {
+        background-size: 45px 45px;
+        padding-top: 0px;
+        margin-left: 10px;
+    }
+    
+    section.photo img {
+        max-width: 100%;
+    }
 
-    section.main { margin-top: 10px; margin-bottom: 10px; }
-    section.main aside div.content { background-size: 55px 55px; padding-top: 60px; }
+    /*Section - Main*/ 
 
-     section.main aside { width: 100%; float: none; text-align: left; }
-     section.main aside div.content {
-         margin: 8px 20px 8px 0;
-         padding: 5px 0px 10px 85px;
-         background-size: 50px 50px; 
-         background-position: 20px 5px; }
+    section.main aside { width: 100%; float: none; text-align: left; }
+    section.main aside div.content {
+        margin: 8px 20px 8px 0;
+        padding: 5px 0px 10px 85px;
+        background-size: 50px 50px; 
+        background-position: 20px 5px; }
 
     /*Section - Nav*/
 
@@ -255,8 +279,20 @@ header div.hero h1 { line-height: 1em; width:55%; margin:-380px 30px 50px 250px;
 
 
     header div.hero { width: 400px; top: 20px; left: 100px; }
-    header div.hero h1 { font-size: 1.8em; margin:30px 30px 50px 250px;}
+    header div.hero h1 { font-size: 1.8em; margin:30px 30px 50px 100px;}
     header img { height: 200px; }
+
+    /*Section - RBAC Photo*/
+    section.photo {
+        background-size: 35px 35px;
+        padding-top: 0px;
+        margin-left: 10px;
+    }
+    
+    section.photo img {
+        max-width: 100%;
+    }
+
 
     /*Section - Main*/ 
 
@@ -272,8 +308,8 @@ header div.hero h1 { line-height: 1em; width:55%; margin:-380px 30px 50px 250px;
     /*Navigation */ 
 
     nav {
-    background-color: rgba(0, 0, 0, 0.65); 
-    position: absolute;
+    background-color: #4b0a0c; 
+    position: static;
     top: 160px; left: 0px; 
     padding: 0;
     width: 100%;
@@ -294,15 +330,33 @@ header div.hero h1 { line-height: 1em; width:55%; margin:-380px 30px 50px 250px;
 @media screen and (max-width: 425px) {
 
   /*Header*/
-  header { height: 150px; background-image: url(images/TFsample.jpg); }
+    header { height: 150px; background-image: url(images/TFsample.jpg); }
 
-  header div.hero { width: 100%; left: 10px; top: 20px; text-align: center; }
-  header div.hero h1 { font-size: 1.2em; margin-bottom: 10px; margin-left: 150px;}
+    header div.hero { width: 100%; left: 10px; top: 20px; text-align: center; }
+    header div.hero h1 { font-size: 1.2em; margin-bottom: 10px; margin-left: 115px;}
     header img { height: 150px; }
 
+  /*Section - RBAC Photo*/
+  section.photo {
+        background-size: 25px 25px;
+        padding-top: 0px;
+        margin-left: 5px;
+    }
+    
+    section.photo img {
+        max-width: 100%;
+    }
+
   /*Section - Nav*/
-  
-   /*Footer */
+
+    nav {position: static; width: auto; padding: 20px 15px; background-color: #4b0a0c; }
+
+    nav ul {position: static; width: auto; padding: 0px 0px;}
+
+    nav ul li {width:auto;}
+
+    nav ul li a {width: auto; padding: 10px 10px;}
+    /*Footer */
 
    footer::after {content:''; display: block; clear: both; }
 
@@ -312,5 +366,6 @@ header div.hero h1 { line-height: 1em; width:55%; margin:-380px 30px 50px 250px;
         clear: both; 
 
    }
+}   
 
 }
