@@ -71,7 +71,7 @@ header a.logo span {display: none}*/
 
 header div.hero { position: absolute; width: 56%; top: 70px; left: 35%; }
 header div.hero h1 { line-height: 1em; width:52%; margin: 0 0 30px 0; color: #fff; border: 1px solid #fff; background-color:#cc6633; } 
-header div.hero h3 { line-height: 1em; margin: 0 76px 30px 0px; color: #fff; }
+header div.hero h3 { line-height: 1em; margin: 0 300px 30px 0px; color: #fff; border: 1px solid #fff; background-color:#cc6633; }
 
 header a.btn { background-color:#65b1ff; } 
 
