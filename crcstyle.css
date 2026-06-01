@@ -29,13 +29,13 @@ h2 {
 h3 {
     margin: 0 0 .5em 0;
     font-size: 1.3em;
-    font-weight: 800
+    font-weight: 700
 }
 
 h4 {
     margin: 0 0 1.5em 0;
     font-size: 1em;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 p {
@@ -50,7 +50,7 @@ a:visited {
     color: #65b1ff;
 }
 
-a.btn { font-size: 1em; text-decoration: none; color: #fff; border: 1px solid #fff; padding: 4px 15px; transition: background-color .5s; } 
+a.btn { font-size: 1em; text-decoration: none; color: #fff; border: 1px solid #fff; padding: 4px 15px; transition: background-color .5s;} 
 
 a.btn:hover { background-color: rgba(0, 0, 0, .3); } 
 
@@ -69,11 +69,13 @@ header {height: 330px; background: #cc6633 url(images/ethernetoriginal.jpg) no-r
 
 header a.logo span {display: none}*/
 
-header div.hero { position: absolute; width: 56%; top: 70px; left: 35%; }
-header div.hero h1 { line-height: 1em; width:52%; margin: 0 0 30px 0; color: #fff; border: 1px solid #fff; background-color:#cc6633; } 
-header div.hero h3 { line-height: 1em; margin: 0 300px 30px 0px; color: #fff; border: 1px solid #fff; background-color:#cc6633; }
+header div.hero { position: relative; width: 70%; top: 30px; left: 35%; }
+header div.hero h1 { line-height: 1em; width: 59%; margin: 0 0 30px 0; color: #fff; border: 1px solid #fff; background-color:#cc6633; text-align: center;} 
+header div.hero h3 { line-height: 1em; width:59%; margin: 10px 0 30px 0px; color: #fff; border: 1px solid #fff; background-color:#cc6633; text-align: center;} 
 
-header a.btn { background-color:#65b1ff; } 
+header div.hero h4 { line-height: 1em; width: 60%; }
+
+header a.btn { background-color:#65b1ff; width:59%; } 
 
 /* Section - All  */
 
@@ -99,7 +101,13 @@ section.main aside .content.skills {background-image: url(images/icon_star.svg);
 
 section.details {background-color: #cc6633; padding-top: 30px; padding-bottom: 30px; color: #fff; }
 
-/*Section - Certs */
+/*Section - Okta and Certs */
+
+section.okta aside {width: 25%; float: left; text-align: center; }
+
+div.contentokta {  margin: 15px; background: no-repeat center top; background-size: 50px 50px; padding-top: 10px;}
+
+div.contentcerts img { height: 190px; width: 210px; margin: 15px; background: no-repeat center top; background-size: 50px 50px; padding-top: 10px;}
 
 section.certs { margin-top: 20px; margin-bottom: 10px; margin-left: 30px; padding: 20; }
 
@@ -173,13 +181,15 @@ footer a:hover { color: #000; }
 
     h1 { font-size: 2.4em; }
 
-    /* Header */
+    /* Header 
     header div.hero { left: 35%; top: 70px; }
     header div.hero h1 { width: 85%; }
 
  
     header div.hero h1 { line-height: 1em; width: 54%; margin: 0 0 30px 0px; color: #fff; border: 1px solid #fff; } 
-    header div.hero h3 {line-height: 1em; margin: 0 50px 30px 0; color: #fff; }
+    header div.hero h3 {line-height: 1em; width: 54%; margin: 0 50px 30px 0; color: #fff; }*/
+
+   header div.hero h4 { width: 75%; }
 
     /* Section-Atmosphere or details */
     section.details content {padding-left: 400px; background-size: 375px auto; }
@@ -194,11 +204,14 @@ footer a:hover { color: #000; }
 
     h1 { font-size: 2.2em; }
 
-    /*Header*/ 
+    /*Header */
 
     header { height: 300px; background-image: url(images/ethernetoriginal_825.jpg); }
-    header div.hero { top: 50px; left: 35%; }
-    header img { height: 300px; }
+
+    header div.hero { width: 600px; top: 20px; left: 50px; }
+    
+    /*header div.hero { top: 50px; left: 35%; }
+    header img { height: 300px; }*/
 
     /*Section - Atmosphere or details */
 
@@ -221,11 +234,11 @@ footer a:hover { color: #000; }
     h1 { font-size: 1.8em; }
     h2 { font-size: 1.4em; }
     h3 { font-size: 1.1em; }
-    a.btn { font-size: 1em; }
+    a.btn { font-size: .8em; }
 
      /*Header*/ 
-
-    header div.hero { top: 55px; left: 35% }
+    header div.hero { width: 600px; top: 10px; left: 25px; }
+    header div.hero h4 { width: 75%; }
     
     /*Section - Main (professional summary and core strengths)*/
 
@@ -266,8 +279,8 @@ footer a:hover { color: #000; }
     }
         */
 
-    header div.hero { width: 400px; top: 20px; left: 100px; }
-    header div.hero h1 { font-size: 2em; margin-bottom: 10px; }
+    header div.hero { width: 600px; top: 10px; left: 25px; }
+    header div.hero h1 { font-size: 2em; margin-bottom: 5px; }
     header img { height: 200px; }
 
     /*Section - Main*/ 
@@ -285,6 +298,15 @@ footer a:hover { color: #000; }
 
     nav {position: static; width: auto; padding: 20px 15px; background-color: #4b0a0c; } */
 
+    /*Section - Okta */
+  section.okta aside {float: left; margin: 10px; position: relative; padding: 0 60px 0 0; } 
+
+  section.okta aside h5 { font-size: .6em; text-align: center; width: 25%; }
+
+  div.contentcerts img { width: 100px; height: 80px; }
+
+  div.contentcerts h5 { font-size: .6em; text-align: center; width: 25%; }
+
     /*Section - How-to or Certs */
     section.certs aside div.content.certs { margin-top: 20px; margin-bottom: 10px; float: right; padding-left: 325px; background-size: 300px auto; }
     section.certs aside div.content.certs img { height: 50px; padding: 0 10px 0 325px; background-size: 300px auto; }
@@ -298,10 +320,20 @@ footer a:hover { color: #000; }
   /*Header*/
   header { height: 150px; background-image: url(images/ethernetoriginal_425.jpg); }
 
-  header div.hero { width: 100%; left: 10px; top: 20px; text-align: center; }
-  header div.hero h1 { font-size: 1.2em; margin-bottom: 10px; margin-left: 65px;}
-  header div.hero h3 { font-size: .9em; margin-bottom: 10px; }
-  header div.hero a.btn { padding: 2px 10px; font-size: .8em; margin-right: 75px; }
+  header div.hero { width: 90%; left: 20px; top: 10px; text-align: center; }
+  header div.hero h1 { font-size: 1.2em; margin-bottom: 10px; margin-left: 25px;}
+  header div.hero h3 { font-size: .8em; width: 80%; margin-bottom: 5px; }
+  header div.hero h4 { width: 120%; margin: 0 0 0 -40px; }
+  header div.hero a.btn { padding: 2px 10px; font-size: .7em; }
+  
+  /*Section - Okta */
+  section.okta aside {float: left; margin: 10px; position: relative; padding: 0 60px 0 0; } 
+
+  section.okta aside h5 { font-size: .6em; text-align: center; width: 25%; }
+
+  div.contentcerts img { width: 100px; height: 80px; }
+
+  div.contentcerts h5 { font-size: .6em; text-align: center; width: 25%; }
 
   /*Section - How-to or Certs */
   section.certs aside { width: 18%; float: left; margin: 10px; position: relative; padding: 0 10px 0 5px; }
@@ -325,4 +357,3 @@ footer a:hover { color: #000; }
    }
 
 }
-
